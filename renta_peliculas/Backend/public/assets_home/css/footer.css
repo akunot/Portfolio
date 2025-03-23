@@ -1,0 +1,33 @@
+footer {
+    border-top: 2px solid rgba(255, 215, 0, 0.3);
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border-bottom: 5px linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.social-links a:hover {
+    color: #ffd700 !important;
+    transform: translateY(-2px);
+}
+
+.list-unstyled li {
+    margin: 0.5rem 0;
+}
+
+.list-unstyled a {
+    transition: all 0.3s ease;
+}
+
+.list-unstyled a:hover {
+    color: #ffd700 !important;
+    padding-left: 5px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+    border-color: #ffd700;
+}

@@ -1,0 +1,151 @@
+/* Estilos del Actor */
+.actor-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.actor-portrait-frame {
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-top: 125%;
+    position: relative;
+}
+
+.actor-portrait {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.actor-name {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffd700;
+}
+
+.actor-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.meta-item i {
+    font-size: 1.2rem;
+}
+
+.actor-bio {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+/* Filmografía */
+.filmography-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.film-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.film-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+}
+
+.film-poster {
+    height: 350px;
+    overflow: hidden;
+}
+
+.film-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.film-card:hover .film-poster img {
+    transform: scale(1.05);
+}
+
+.film-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.film-title {
+    color: #ffd700;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.5rem;
+}
+
+.film-description {
+    color: #f5e8e8;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.btn-details {
+    background: #ffd700 !important;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-details:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Estados Vacíos */
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .actor-portrait-frame {
+        padding-top: 150%;
+    }
+    
+    .film-poster {
+        height: 250px;
+    }
+}
