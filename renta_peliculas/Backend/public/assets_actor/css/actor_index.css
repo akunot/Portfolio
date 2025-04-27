@@ -1,0 +1,91 @@
+.actor-card {
+    transition: all 0.3s ease;
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.actor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.actor-image-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.actor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.actor-card:hover img {
+    transform: scale(1.05);
+}
+
+.actor-title {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.actor-subtitle {
+    color: #ffffff;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.actor-description {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 1rem;
+    min-height: 80px;
+}
+
+.btn-details {
+    background: #ffd700 !important;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.btn-details:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
+.btn-gold {
+    background: #ffd700 !important;
+    color: #1a1a1a;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background: #ffc800;
+    transform: scale(1.05);
+}
+
+.hero-section {
+    height: 85vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets_home/img/header_actor.jpg') center/cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}

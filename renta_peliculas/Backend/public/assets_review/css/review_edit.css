@@ -1,0 +1,176 @@
+/* Estilos del Formulario Cinematográfico */
+.cinematic-form-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.cinematic-form-container {
+    max-width: 800px;
+    margin: 4rem auto 0 auto;
+    padding: 2rem;
+    background: rgba(26, 26, 26, 0.9);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cinematic-title {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.gold-bar {
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    margin: 0 auto;
+    width: 40%;
+}
+
+/* Elementos del Formulario */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffd700;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.form-control-plaintext {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+.form-label {
+    color: #ffd700;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    resize: vertical;
+    min-height: 150px;
+    transition: all 0.3s ease;
+}
+
+.form-textarea:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    outline: none;
+}
+
+.rating-input {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-rating {
+    width: 80px;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.btn-gold {
+    background: #ffd700 !important;
+    color: #1a1a1a;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background: #ffc800;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cinematic-form-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .cinematic-title {
+        font-size: 2rem;
+    }
+    
+    .form-control-plaintext {
+        padding-left: 2.5rem;
+    }
+}
+
+/* Botón Cancelar */
+.btn-cancel {
+    background: #dc3545 !important;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.btn-cancel:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* Mejoras para edición */
+.form-textarea {
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.form-rating {
+    width: 100px;
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+}
+
+/* Validación */
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
